@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c1917;
+}
+header {
+  background-color: #1c1917;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+h1,
+h3,
+p,
+a {
+  color: #f8fafc;
+  text-decoration: none;
+}
+.container {
+  width: min(90%);
+  margin: auto;
+}
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+  /* color: #f8fafc; */
+}
+.navbar__links h1 {
+  flex: 3;
+}
+.navbar__links ul {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  justify-content: right;
+}
+ul {
+  list-style-type: none;
+}
+
+a:hover,
+footer p:hover {
+  color: #fb923c;
+}
+
+#showcase {
+  height: 100vh;
+  background: #0f172a url("/images/guus-baggermans-cg599DTeS8w-unsplash.jpg")
+    no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #f8fafc; */
+}
+.showcase__content {
+  margin-top: 10rem;
+}
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 0.975rem;
+  background-color: #f8fafc;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+  margin-top: 10rem;
+}
+.btn.mb-2 {
+  margin-block: 6rem;
+  margin-inline: auto;
+  display: block;
+}
+.btn:hover {
+  background-color: #1c1917;
+  color: #f8fafc;
+  transition: 0.1s ease-in;
+}
+.btn.mb-2:hover {
+  background-color: #fb923c;
+  color: #1c1917;
+}
+
+/* FEATURES SECTION*/
+section {
+  background-color: #292524;
+}
+.grid-col2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto;
+  /* color: #f8fafc; */
+  /* border: 2px solid red; */
+}
+.info.container {
+  text-align: center;
+}
+.info h3 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+.info p {
+  line-height: 1.5rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.grid-reverse {
+  grid-column-start: 1;
+  grid-row-end: 1;
+  padding-block: 2rem;
+}
+/* FOOTER IMAGES */
+footer {
+  background-color: #1c1917;
+}
+.footer-container {
+  margin-block: 4rem;
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  width: 2rem;
+}
+footer ul {
+  display: flex;
+  gap: 1rem;
+}
+footer ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#barbers h1 {
+  text-align: center;
+  font-size: 2rem;
+  display: block;
+  padding-block: 4rem;
+}
+#barbers {
+  background-color: #1c1917;
+
+  /* color: #f8fafc; */
+  /* border: 2px solid red; */
+}
+
+#barbers .container {
+  display: flex;
+  justify-content: center;
+}
+.barbers__profile.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: auto;
+  /* gap: 2rem; */
+  /* border: 2px solid red; */
+}
+.barbers__profile-card {
+  text-align: center;
+}
+.barbers__profile-card h3 {
+  padding: 2rem;
+}
+.barbers__profile-card img {
+  display: block;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* BACK TO TOP */
+.back {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* - Laptop-Desktop 1024px 64rem */
+@media (min-width: 48.05rem) and (max-width: 75rem) {
+  .barbers__profile.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+  }
+}

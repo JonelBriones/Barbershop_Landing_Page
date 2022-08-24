@@ -1,0 +1,73 @@
+header {
+  height: 100vh;
+  background-color: #1c1917;
+  position: static;
+  /* width: 100%; */
+}
+
+.navbar__links {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.navbar__links ul {
+  display: block;
+  margin-top: 2rem;
+}
+.navbar__links ul li {
+  padding-block: 3rem;
+}
+
+.features__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto;
+  /* color: #f8fafc; */
+  gap: 1rem;
+}
+.info {
+  grid-column-start: 1;
+  grid-row-end: 1;
+  padding-block: 2rem;
+}
+
+/* button */
+.btn.mb-2 {
+  margin-block: 4rem;
+  margin-inline: auto;
+  display: block;
+}
+
+/* FOOTER */
+.footer-container {
+  /* margin: 0; */
+  padding-block: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  display: block;
+  /* gap: 3rem; */
+}
+footer ul li {
+  padding: 0.5rem;
+}
+
+/* ABOUT | BARBER PROFILE CARDS */
+.barbers__profile.grid {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  /* border: 2px solid red; */
+  /* min-width: 70%; */
+}
+
+/* BACK TO TOP */
+.back {
+  display: block;
+  text-align: center;
+  padding-bottom: 2rem;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+}
